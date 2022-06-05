@@ -1,0 +1,83 @@
+*{
+    padding:0;
+    margin:0;
+}
+body {
+    font-family: 'Lato'
+}
+.loader-page {
+    background-color: #333;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: all .5s ease-out;
+}
+.loader-container{
+    /*border: 10px solid rgb(218, 10, 10);*/
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loader{
+    width: 500px;
+    height: 5px;
+    background-color: rgba(0,0,0,0.3);
+    position: relative;
+}
+.loader-fill{
+    background-color: steelblue;
+    width: 0px;
+    height: 10px;
+    position: absolute;
+}
+.loader-counter{
+    position: center;
+    font-size: 1.5rem;
+    font-family: 'Lato';
+    font-weight: 300;
+    letter-spacing: -1px;
+    color: rgb(255, 255, 255);
+    z-index: 9;
+}
+h1{
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+}
+header{
+    background-image: url(tomb_raider_lara_croft-wallpaper-2560x1600.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.overlay{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+h1{
+    position: absolute;
+    z-index: 1;
+}
+@media (max-width: 768px){
+    h1{
+        font-size:5vw;
+    }
+}
